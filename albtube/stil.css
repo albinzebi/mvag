@@ -4,9 +4,9 @@ body {
     font-family: verdana, sans-serif;
 }
 
-header, li, main, section, footer {
-    padding: 1em;
-    margin: 1em;
+header,button, section, footer {
+    padding: 0.5em;
+    margin: 0.5em;
 }
 
 header, footer {
@@ -19,24 +19,36 @@ li, section {
 }
 
 li {
-    outline: 1px solid #00ff00;
+    font-size: 1.3em;
+    padding: 0.2em;
+    margin: 0.2em;
+}
+
+a:link, a:visited {
+    color: #ffffff;
+    background-color: #000000;
+    padding: 0.2em;
+}
+
+a:hover, a:active {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #ff0000;
+}
+
+button:active {
+    background-color: #00ff00;
+}
+
+section:hover {
+    outline: 1px solid #ff0000;
 }
 
 iframe {
     border: none;
-}
-
-a:link, a:visited {
-    color: lightblue;
-}
-
-a:hover, a:active {
-    color: #00ff00;
-    text-decoration: none;
-}
-
-section:hover {
-    outline: 1px solid #00ff00;
 }
 
 .absolut {

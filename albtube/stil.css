@@ -9,7 +9,7 @@ header, li, main, section, footer {
     margin: 1em;
 }
 
-header {
+header, footer {
     text-align: center;
 }
 
@@ -19,7 +19,7 @@ li, section {
 }
 
 li {
-    outline: 1px solid #ffffff;
+    outline: 1px solid #00ff00;
 }
 
 iframe {
@@ -27,14 +27,18 @@ iframe {
 }
 
 a:link, a:visited {
-    color: lightgray;
+    color: lightblue;
 }
 
 a:hover, a:active {
-    color: #ffffff;
+    color: #00ff00;
     text-decoration: none;
 }
 
 section:hover {
-    outline: 1px solid #ffffff;
+    outline: 1px solid #00ff00;
+}
+
+.absolut {
+    clear: both;
 }

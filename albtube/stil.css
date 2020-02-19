@@ -1,0 +1,40 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: verdana, sans-serif;
+}
+
+header, li, main, section, footer {
+    padding: 1em;
+    margin: 1em;
+}
+
+header {
+    text-align: center;
+}
+
+li, section {
+    float: left;
+    list-style-type: none;
+}
+
+li {
+    outline: 1px solid #ffffff;
+}
+
+iframe {
+    border: none;
+}
+
+a:link, a:visited {
+    color: lightgray;
+}
+
+a:hover, a:active {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+section:hover {
+    outline: 1px solid #ffffff;
+}

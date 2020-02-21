@@ -60,3 +60,6 @@ iframe {
     width: 480px;
     height: 270px;
 }
+* {
+    box-sizing: border-box;
+}

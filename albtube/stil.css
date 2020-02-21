@@ -48,3 +48,7 @@ section:hover {
 header, #tema, footer {
     text-align: center;
 }
+
+* {
+    box-sizing: border-box;
+}

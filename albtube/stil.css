@@ -4,7 +4,7 @@ body {
     color: #ffffff;
 }
 
-button {
+button, .fa-chevroln-up {
     padding: 0.5em;
 }
 
@@ -18,7 +18,7 @@ button:hover {
     display: table;
 }
 
-nav, a {
+nav, li a, p a, div a {
     background-color: #000000;
 }
 
@@ -33,7 +33,7 @@ li {
     padding: 0.5em 0;
 }
 
-a {
+li a, p a, div a {
     color: #ffffff;
     text-decoration: none;
     padding: 0.5em;
@@ -62,4 +62,10 @@ iframe {
 }
 * {
     box-sizing: border-box;
+}
+
+.butoniLart {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
 }

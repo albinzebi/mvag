@@ -46,6 +46,7 @@ a:hover {
 section {
     float: left;
     margin: 0.5em 0.5em 0.5em 0;
+    max-width:100%;
 }
 
 section:hover {

@@ -15,20 +15,25 @@
 <body>
     
     <header>
-        <button type="button" class="leftbutton" onclick="showMenuL()"><i class="fas fa-ellipsis-v"></i></button>
-        <h1><a class="home" href="#">alBzeB</a></h1>
-        <button type="button" class="rightbutton" onclick="showMenuR()"><i class="fas fa-ellipsis-v"></i></button>
+        <div class="leftburger"><i class="fas fa-ellipsis-v"></i>
+            <nav class="leftmenu">
+                <div><a href="#">Home</a></div>
+                <div><a href="#">Contact</a></div>
+                <div><a href="#">About</a></div>
+                <div>Tema</div>
+                <div>Ads 1/3</div>
+            </nav>
+        </div>
+        <div class="homediv"><a class="home" href="#">alBzeB</a></div>
+        <div class="rightburger"><i class="fas fa-ellipsis-v"></i>
+            <nav class="rightmenu">
+                <div>Week</div>
+                <div>Month</div>
+                <div>Ads 1/3</div>
+            </nav>
+        </div>
     </header>
-    
-    <nav class="left panel" id="lpanel">
-        <div><button type="button" onclick="hideMenuL()" class="hide">x</button></div>
-        <div><a href="#">Home</a></div>
-        <div><a href="#">Contact</a></div>
-        <div><a href="#">About</a></div>
-        <div>Tema</div>
-        <div>Ads 1/3</div>
-    </nav>
-    
+     
     <main class="center">
         <article>
             <h2>HTML</h2>
@@ -126,13 +131,6 @@
                 I am the content of the article.</p>
         </article>
     </main>
-
-    <nav class="right panel" id="rpanel">
-        <div><button type="button" onclick="hideMenuR()" class="hide">x</button></div>
-        <div>Week</div>
-        <div>Month</div>
-        <div>Ads 1/3</div>
-    </nav>
 
     <footer>
         <p>&copy; 2020 Albin Zebi<br />

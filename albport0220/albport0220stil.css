@@ -1,3 +1,4 @@
+/* general styling */
 * {
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -6,70 +7,67 @@
 body {
     margin: 0;
     background-image: linear-gradient(180deg, white, lightgray);
-    background-attachment: fixed;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
+div i.fa-ellipsis-v, div.homediv a.home, nav.leftmenu {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+/* header styling */
 header {
     text-align: center;
-    background-color: black;
-    color: white;
-    font-size: 2em;
-    font-weight: bold;
     display: flex;
     justify-content: space-between;
     position: sticky;
     top: 0;
+    background-color: white;
 }
 
 i.fa-ellipsis-v {
-    padding: 0 1em;
-}
-
-div.homediv:hover a.home {
-    color: lightblue;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-nav.leftmenu, nav.rightmenu {
-    background-color: black;   
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 1s;
-    position: absolute;
-    height: 100vh;
-    width: 80vw;
-    text-align: left;
-}
-
-nav > div {
-    border-bottom: 1px solid white;
-    padding: 0.5em;
-    margin: 0.5em;
-}
- 
-nav > div a:hover {
-    color: lightblue;
-}
-
-div.ads {
-    border: none;
-}
-
-div.top5 ol {
-    font-size: 20px;
-    padding-left: 0;
-}
-
-nav.rightmenu {
-    right: 0;
+    padding: 0.2em 1em;
 }
 
 div.leftburger, div.rightburger {
     position: relative;
+}
+
+div.leftburger:hover i.fa-ellipsis-v, div.rightburger:hover i.fa-ellipsis-v {
+    visibility: hidden;
+}
+
+/* nav(menu) styling) */
+nav.leftmenu, nav.rightmenu {
+    background-image: linear-gradient(180deg, white, lightgray);  
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+    position: absolute;
+    height: 100vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+}
+
+nav.rightmenu > div {
+    border-bottom: 1px solid black;
+    margin: 0.5em;
+    background-color: lightgray;
+}
+
+div.top5 span {
+    font-size: 1.3em;
+    font-weight: bold;
+} 
+nav.rightmenu {
+    right: 0;
+    text-align: left;
 }
 
 div.leftburger:hover nav.leftmenu, div.rightburger:hover nav.rightmenu {
@@ -77,20 +75,24 @@ div.leftburger:hover nav.leftmenu, div.rightburger:hover nav.rightmenu {
     opacity: 1;
 }
 
-footer {
-    background-color: black;
-    color: white;
-    padding: 1px;
-    font-weight: bold;
-    text-align: center;
-}
-div.leftburger:hover i.fa-ellipsis-v, div.rightburger:hover i.fa-ellipsis-v {
-    visibility: hidden;
+nav.leftmenu a {
+    margin: 0.5em;
 }
 
+div.top5 ol li a:hover {
+    border-bottom: 3px solid black;
+    font-style: italic;
+}
+
+nav.leftmenu a:hover {
+    font-style: italic;
+    border-left: 0.5em solid black;
+}
+
+
+/* main styling */
 main.center {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
@@ -98,12 +100,13 @@ main.center {
 main.center article {
     width: 300px;
     height: 200px;
-    box-shadow: 1px 1px 0.5em black;
+    box-shadow: -0.5em 0 0.5em black;
     margin: 0.5em;
     padding: 0.5em;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+    border-left: 0.5em solid black;
 }
 
 main.center article a {
@@ -115,27 +118,59 @@ main.center article a {
 }
 
 main.center article a:hover {
-    color: lightblue;
     background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1em;
 }
 
+main.center article.pinned {
+    border-left: 1em solid darkred;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+/* pagination styling */
 div.pagination {
     text-align: center;
+    margin: 1em;
 }
 
 div.pagination a {
     display: inline-block;
     color: black;
     font-weight: bold;
-    padding: 0.5em;
+    padding: 0.5em 1em;
 }
 
 div.pagination a:hover {
-    background-color: lightblue;
+    background-color: black;
+    color: white;
 }
 
 div.pagination a#page1 {
-    background-color: lightblue;
+    background-color: black;
+    color: white;
+}
+
+/* footer styling */
+footer {
+    background-color: black;
+    color: white;
+    padding: 1px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* media quaries */
+@media screen and (max-width: 360px) {
+    nav a.xbox, div.month {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) and (orientation: landscape) {
+    nav a.micro, nav a.xbox, div.month {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 576px) {
@@ -209,26 +244,26 @@ div.pagination a#page1 {
 }
 
 @media screen and (min-width: 1600px) {
-    header {
+    main, div.top5 ol li, div.pagination, footer {
+        font-size: 1vw;
+    }
+
+    div i.fa-ellipsis-v, div.homediv a.home, nav.leftmenu {
         font-size: 2vw;
     }
 
-    div.top5 ol {
+    div.top5 span {
         font-size: 1.5vw;
     }
-    
-    main, footer, div.pagination {
-        font-size: 1vw;
+
+    a.micro img, a.xbox img {
+        width: 8vw;
+        height: auto;
     }
 
     main.center article {
         width: 390px;
         height: 260px;
-    }
-
-    div.ads a img {
-        width: 8vw;
-        height: 8vw;
     }
 }
 

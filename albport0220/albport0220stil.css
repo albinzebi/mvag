@@ -42,6 +42,26 @@ nav.leftmenu, nav.rightmenu {
     position: absolute;
     height: 100vh;
     width: 80vw;
+    text-align: left;
+}
+
+nav > div {
+    border-bottom: 1px solid white;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+ 
+nav > div a:hover {
+    color: lightblue;
+}
+
+div.ads {
+    border: none;
+}
+
+div.top5 ol {
+    font-size: 16px;
+    padding-left: 0;
 }
 
 nav.rightmenu {
@@ -55,10 +75,6 @@ div.leftburger, div.rightburger {
 div.leftburger:hover nav.leftmenu, div.rightburger:hover nav.rightmenu {
     visibility: visible;
     opacity: 1;
-}
-
-div.leftburger:hover, div.rightburger:hover {
-    cursor: pointer;
 }
 
 footer {
@@ -91,17 +107,35 @@ main.center article {
 }
 
 main.center article a {
-    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
-    color: black;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
     display: block;
     height: 80%;
     margin: 0 1em;
 }
 
 main.center article a:hover {
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-    color: white;
+    color: lightblue;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+div.pagination {
+    text-align: center;
+}
+
+div.pagination a {
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+div.pagination a:hover {
+    background-color: lightblue;
+}
+
+div.pagination a#page1 {
+    background-color: lightblue;
 }
 
 @media screen and (min-width: 576px) {
@@ -179,13 +213,18 @@ main.center article a:hover {
         font-size: 2vw;
     }
     
-    main, footer {
+    main, footer, div.pagination, div.top5 ol {
         font-size: 1vw;
     }
 
     main.center article {
         width: 390px;
         height: 260px;
+    }
+
+    div.ads a img {
+        width: 16vw;
+        height: 16vw;
     }
 }
 

@@ -146,7 +146,7 @@ div.pagination a:hover {
     color: white;
 }
 
-div.pagination a#page1 {
+div.pagination a#pagenumber {
     background-color: black;
     color: white;
 }

@@ -60,7 +60,7 @@ div.ads {
 }
 
 div.top5 ol {
-    font-size: 16px;
+    font-size: 20px;
     padding-left: 0;
 }
 
@@ -212,8 +212,12 @@ div.pagination a#page1 {
     header {
         font-size: 2vw;
     }
+
+    div.top5 ol {
+        font-size: 1.5vw;
+    }
     
-    main, footer, div.pagination, div.top5 ol {
+    main, footer, div.pagination {
         font-size: 1vw;
     }
 
@@ -223,8 +227,8 @@ div.pagination a#page1 {
     }
 
     div.ads a img {
-        width: 16vw;
-        height: 16vw;
+        width: 8vw;
+        height: 8vw;
     }
 }
 

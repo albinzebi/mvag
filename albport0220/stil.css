@@ -74,12 +74,6 @@ nav.leftmenu, nav.rightmenu {
     padding: 0.5em;
 }
 
-nav.rightmenu > div {
-    border-bottom: 1px solid black;
-    margin: 0.5em;
-    background-color: lightgray;
-}
-
 div.top5 span {
     font-size: 1.3em;
     font-weight: bold;
@@ -87,7 +81,15 @@ div.top5 span {
 
 nav.rightmenu {
     right: 0;
+    text-align: center;
+}
+
+div.top5 ol {
     text-align: left;
+}
+
+div.top5 {
+    background-color: white;
 }
 
 div.leftburger:hover nav.leftmenu, div.rightburger:hover nav.rightmenu {
@@ -109,6 +111,10 @@ nav.leftmenu a:hover {
     border-left: 0.5em solid black;
 }
 
+nav.leftmenu a#active {
+    font-style: italic;
+    border-left: 0.5em solid black;
+}
 
 /* main styling */
 main.center {

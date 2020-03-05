@@ -83,7 +83,8 @@ nav.rightmenu > div {
 div.top5 span {
     font-size: 1.3em;
     font-weight: bold;
-} 
+}
+
 nav.rightmenu {
     right: 0;
     text-align: left;
@@ -180,23 +181,17 @@ footer {
 }
 
 /* media quaries */
-@media screen and (max-width: 360px) {
-    nav a.xbox, div.month {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 992px) and (orientation: landscape) {
+@media screen and (max-height: 576px) and (orientation: landscape) {
     nav a.micro, nav a.xbox, div.month {
         display: none;
     }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
     nav.leftmenu {
         visibility: visible;
         opacity: 1;
-        width: 35vw;
+        width: 30vw;
     }
 
     div.leftburger i.fa-ellipsis-v {
@@ -204,25 +199,11 @@ footer {
     }
 
     main {
-        margin-left: 35vw;
-    }
-
-    nav.rightmenu {
-        width: 35vw;
-    }
-
-
-@media screen and (min-width: 768px) {
-    nav.leftmenu {
-        width: 30vw;
-    }
-
-    main {
         margin-left: 30vw;
     }
     
     nav.rightmenu {
-        width: 30vw;
+        width: 50vw;
     }
 
     main.center article.pinned {

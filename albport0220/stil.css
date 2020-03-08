@@ -39,6 +39,10 @@ div.leftburger:hover i.fa-ellipsis-v, div.rightburger:hover i.fa-ellipsis-v {
     visibility: hidden;
 }
 
+div.leftburger:active i.fa-ellipsis-v, div.rightburger:active i.fa-ellipsis-v {
+    visibility: hidden;
+}
+
 div.homediv a.home span.bnr1 {
     animation-name: titull;
     animation-duration: 2s;
@@ -93,6 +97,11 @@ div.top5 {
 }
 
 div.leftburger:hover nav.leftmenu, div.rightburger:hover nav.rightmenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+div.leftburger:active nav.leftmenu, div.rightburger:active nav.rightmenu {
     visibility: visible;
     opacity: 1;
 }

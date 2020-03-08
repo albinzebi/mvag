@@ -1,71 +1,117 @@
+/* General styling */
+* {box-sizing: border-box;}
+
 body {
-    font-family: verdana, sans-serif;
-    background-color: #000000;
-    color: #ffffff;
-}
-
-button, .fa-chevroln-up {
-    padding: 0.5em;
-}
-
-button:hover {
-    color: #4d4d4d;
-}
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-nav, li a, p a, div a {
-    background-color: #000000;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
+    background-image: linear-gradient(180deg, white, lightblue);
+    background-attachment: fixed;
 }
 
-li {
-    float: left;
-    padding: 0.5em 0;
-}
-
-li a, p a, div a {
-    color: #ffffff;
+a {
+    color: white;
     text-decoration: none;
-    padding: 0.5em;
+    font-weight: bold;
 }
 
 a:hover {
-    background-color: #4d4d4d;
+    background-color: white;
+    color: black;
+    font-style: italic;
 }
 
-section {
-    float: left;
-    margin: 0.5em 0.5em 0.5em 0;
-}
-
-section:hover {
-    outline: 1px double #4d4d4d;
-}
-
-header, #tema, footer {
+/* Header styling */
+header {
     text-align: center;
 }
 
-iframe {
-    width: 320px;
-    height: 180px;
-}
-* {
-    box-sizing: border-box;
+header a {
+    color: black;
 }
 
-.butoniLart {
-    position: fixed;
-    bottom: 1em;
-    right: 1em;
+/* Navigation styling */
+nav {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+nav a, nav details {
+    display: inline-block;
+    padding: 8px;
+    font-size: 24px;
+    width: 300px;
+}
+
+details {
+    position: relative;
+    border: none;
+}
+
+details:active summary, details:hover summary {
+    color: white;
+    font-style: italic;
+}
+
+div.listChannels {
+    position: absolute;
+    background-color: black;
+    right: 0;
+    left: 0;
+    top: 100%;
+    border: none;
+}
+
+div.listChannels a {
+    font-size: 20px;
+}
+
+summary {
+    color: black;
+    border: none;
+}
+
+span {
+    color: white;
+    font-weight: bold;
+}
+
+/* Main content styling */
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main > div {
+    margin: 8px;
+}
+
+main div h2 {
+    text-align: center;
+}
+
+iframe {border: none;}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    font-size: 24px;
+}
+
+footer a {
+    color: black;
+}
+
+footer p.contactMe a:hover {
+    color: white;
+    background: black;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    iframe {
+        width: 600px;
+        height: 400px;
+    }
 }

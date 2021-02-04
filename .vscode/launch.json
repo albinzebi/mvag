@@ -5,18 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch albtube/tekst.html",
+            "name": "Launch LearnJavaScript/tekst.html",
             "type": "firefox",
             "request": "launch",
             "reAttach": true,
-            "file": "${workspaceFolder}/albtube/tekst.html"
+            "file": "${workspaceFolder}/LearnJavaScript/tekst.html"
         },
         {
             "name": "Launch localhost",
             "type": "firefox",
             "request": "launch",
             "reAttach": true,
-            "url": "http://localhost/albtube/tekst.html",
+            "url": "http://localhost/LearnJavaScript/tekst.html",
             "webRoot": "${workspaceFolder}"
         },
         {

@@ -1,0 +1,137 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: 400px;
+}
+
+body, input, button {
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  color: #222;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.headerMain {
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  height: 60px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.headerChild {
+  display: inline-block;
+  flex-grow: 1;
+}
+
+.links {
+  float: right;
+  padding-left: 0;
+  box-sizing: border-box;
+  line-height: normal;
+  padding: 0 4px;
+  flex: 0 0 auto;
+  justify-content: flex-end;
+  vertical-align: middle;
+  white-space: nowrap;
+  align-items: center;
+  display: flex;
+}
+
+.linkStyle {
+  display: inline-block;
+  padding-left: 15px;
+}
+
+.linkStyle a {
+  display: inline-block;
+  line-height: 24px;
+  vertical-align: middle;
+  color: rgba(0, 0, 0, 0.87);
+  text-decoration: none;
+  font-size: 13px;
+}
+.linkStyle a:hover {
+  text-decoration: underline;
+}
+
+.googleImageMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 92px;
+  max-height: 290px;
+  height: calc(100% - 560px);
+  flex-shrink: border-box;
+}
+
+.googleImageChild {
+  max-height: 92px;
+  height: 100%;
+  margin-top: auto;
+}
+
+.googleImage {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  width: auto;
+}
+
+.searchMain {
+  padding: 20px;
+  max-height: 160px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+.searchMain form .searchChild {
+  width: auto;
+  max-width: 584px;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 6px;
+}
+.searchMain form .searchChild .searchBox0 {
+  width: auto;
+  max-width: 584px;
+  background: #fff;
+  display: flex;
+  border: 1px solid #dfe1e5;
+  box-shadow: none;
+  border-radius: 24px;
+  z-index: 3;
+  height: 44px;
+  margin: 0 auto;
+}
+.searchMain form .searchChild .searchBox0 .searchBox1 {
+  flex: 1;
+  display: flex;
+  padding: 5px 8px 0 16px;
+  padding-left: 14px;
+}
+.searchMain form .searchChild .searchBox0 .searchBox1 .searchLogo {
+  display: flex;
+  align-items: center;
+  padding-right: 13px;
+  margin-top: -5px;
+}
+.searchMain form .searchChild .searchBox0 .searchBox1 .searchLogo i {
+  margin-top: 3px;
+  color: #9aa0a6;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  fill: currentColor;
+  line-height: 24px;
+  position: relative;
+}
+
+/*# sourceMappingURL=style.css.map */

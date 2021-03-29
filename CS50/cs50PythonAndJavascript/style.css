@@ -5,19 +5,21 @@ html, body {
   min-width: 400px;
 }
 
-body, input, button {
+body {
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+body input, body button {
   font-size: 14px;
   font-family: arial, sans-serif;
   color: #222;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.headerMain {
+header {
   display: flex;
   align-items: center;
   padding: 6px;
@@ -26,7 +28,7 @@ body {
   box-sizing: border-box;
 }
 
-.headerChild {
+nav {
   display: inline-block;
   flex-grow: 1;
 }
@@ -44,13 +46,11 @@ body {
   align-items: center;
   display: flex;
 }
-
-.linkStyle {
+.links div {
   display: inline-block;
   padding-left: 15px;
 }
-
-.linkStyle a {
+.links div a {
   display: inline-block;
   line-height: 24px;
   vertical-align: middle;
@@ -58,11 +58,11 @@ body {
   text-decoration: none;
   font-size: 13px;
 }
-.linkStyle a:hover {
+.links div a:hover {
   text-decoration: underline;
 }
 
-.googleImageMain {
+section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,35 +71,43 @@ body {
   height: calc(100% - 560px);
   flex-shrink: border-box;
 }
-
-.googleImageChild {
+section .googleImage {
   max-height: 92px;
   height: 100%;
   margin-top: auto;
 }
-
-.googleImage {
+section .googleImage img {
   max-height: 100%;
   max-width: 100%;
   object-fit: contain;
   object-position: center bottom;
   width: auto;
 }
+section .googleImage div {
+  color: #4285f4;
+  font: 16px/16px roboto-regular, arial, sans-serif;
+  left: 215px;
+  position: relative;
+  top: -20px;
+  white-space: nowrap;
+}
 
-.searchMain {
+main {
   padding: 20px;
   max-height: 160px;
   flex-shrink: 0;
   box-sizing: border-box;
 }
-.searchMain form .searchChild {
+
+form {
   width: auto;
   max-width: 584px;
   position: relative;
   margin: 0 auto;
   padding-top: 6px;
 }
-.searchMain form .searchChild .searchBox0 {
+
+.searchBox {
   width: auto;
   max-width: 584px;
   background: #fff;
@@ -111,19 +119,27 @@ body {
   height: 44px;
   margin: 0 auto;
 }
-.searchMain form .searchChild .searchBox0 .searchBox1 {
+
+.searchBox:hover {
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+  border-radius: 24px;
+}
+
+.searchBox0 {
   flex: 1;
   display: flex;
   padding: 5px 8px 0 16px;
   padding-left: 14px;
 }
-.searchMain form .searchChild .searchBox0 .searchBox1 .searchLogo {
+.searchBox0 .searchLogo {
   display: flex;
   align-items: center;
   padding-right: 13px;
   margin-top: -5px;
 }
-.searchMain form .searchChild .searchBox0 .searchBox1 .searchLogo i {
+.searchBox0 .searchLogo svg {
   margin-top: 3px;
   color: #9aa0a6;
   height: 20px;
@@ -132,6 +148,91 @@ body {
   fill: currentColor;
   line-height: 24px;
   position: relative;
+}
+
+.searchField {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+.searchField input {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.87);
+  word-wrap: break-word;
+  outline: none;
+  display: flex;
+  flex: 100%;
+  height: 34px;
+  font-size: 16px;
+}
+
+.searchButton {
+  height: 70px;
+  padding-top: 18px;
+  top: 53px;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+}
+.searchButton input[value="Google Search"], .searchButton input[name=btnI] {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+.searchButton input[value="Google Search"]:hover, .searchButton input[name=btnI]:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
+}
+.searchButton input[value="Google Search"]:focus, .searchButton input[name=btnI]:focus {
+  border: 1px solid #4d90fe;
+  outline: none;
+}
+
+button {
+  flex: 0 0 auto;
+  padding-right: 13px;
+  height: 44px;
+  width: 44px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+}
+button div {
+  background: none;
+  color: #4285f4;
+  height: 24px;
+  width: 24px;
+  margin: auto;
+}
+button div span {
+  display: inline-block;
+  fill: currentColor;
+  height: 24px;
+  line-height: 24px;
+  position: relative;
+  width: 24px;
+}
+button div span svg {
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

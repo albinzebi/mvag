@@ -2,20 +2,156 @@
 <html lang="en">
     <head>
         <title>Google Advanced Search</title>
+        <link rel="icon" href="circle.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style2.css">
     </head>
     <body>
-        <div>
-            <a href="index.html">Google Search</a>
+        <div class="wrapper">
+        <!-- navigation links on top of the page -->
+        <header>
+            <nav>
+            <div class="links">
+                <a href="index.html">Google Search</a>
+            </div>
+            </nav>
+        </header>
+
+        <div style="height: 60px;"></div>
+
+        <div class="advancedSearchRed">
+            <label>Advanced Search</label>
         </div>
 
-        <div>
+        <div style="border-bottom: 1px solid #ebebeb;"></div>
+    
+        <div class="advancedSearchEmptyFields">
         <form action="https://www.google.com/search">
-            <input type="text" name="as_q"></br>
-            <input type="text" name="as_epq"></br>
-            <input type="text" name="as_oq"></br>
-            <input type="text" name="as_eq"></br>
-            <input type="submit" value="Google Advanced Search">
+            <!-- 'Find pages with' row-->
+            <div class="row0">
+                <div class="row01">
+                <div class="column0">
+                    <div><span>Find pages with...</span></div>
+                </div>
+                
+                <div class="column1">&nbsp;</div>
+                
+                <div class="column2">
+                    <div>To do this in the search box.</div>
+                </div>
+                </div>
+            </div>
+            <!-- empty box rows-->
+            <div class="row1">
+                <!-- first empty box -->
+                <div class="row10">
+                    <div class="column3">
+                        <div>
+                            <label>all these words:</label>
+                        </div>
+                    </div>
+
+                    <div class="column4">
+                        <div>
+                            <input id="one" type="text" name="as_q">
+                        </div>
+                    </div>
+
+                    <div class="column5">
+                        <div>Type the important words:
+                            <span>tri-color rat terrier</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- second empty box -->
+                <div class="row10">
+                    <div class="column3">
+                        <div>
+                            <label>this exact word or phrase:</label>
+                        </div>
+                    </div>
+
+                    <div class="column4">
+                        <div>
+                            <input id="two" type="text" name="as_epq">
+                        </div>
+                    </div>
+
+                    <div class="column5">
+                        <div>Put exact words in quotes: 
+                            <span>"rat terrier"</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- third empty box -->
+                <div class="row10">
+                    <div class="column3">
+                        <div>
+                            <label>any of these words:</label>
+                        </div>
+                    </div>
+
+                    <div class="column4">
+                        <div>
+                            <input id="three" type="text" name="as_oq">
+                        </div>
+                    </div>
+
+                    <div class="column5">
+                        <div>Type OR between all the words you want: 
+                            <span>miniature OR standart</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- fourth empty box -->
+                <div class="row10">
+                    <div class="column3">
+                        <div>
+                            <label>none of these words:</label>
+                        </div>
+                    </div>
+
+                    <div class="column4">
+                        <div>
+                            <input id="four" type="text" name="as_eq">
+                        </div>
+                    </div>
+
+                    <div class="column5">
+                        <div>Put a minus sign before words that you don't want:
+                            <span>-rodent, -"Jack Russell"</span>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                 <!-- blue button -->
+                 <div class="row10">
+                    <div class="column3">
+                        <div>
+                            <label></label>
+                        </div>
+                    </div>
+
+                    <div class="column4" style="text-align: right;">
+                        <input id ="blueButton" type="submit" value="Advanced Search" onclick="return empty4()">
+                    </div>
+
+                    <div class="column5">
+                        <div></div>
+                    </div>
+                    
+                </div>               
+            
+            </div>
+
         </form>
         </div>
+
+        </div>
+        <script src="function.js"></script>
     </body>
 </html>

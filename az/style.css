@@ -10,11 +10,11 @@ nav a {
   font-size: 24px;
   color: white;
   text-decoration: none;
-  padding: 20px 5px;
+  padding: 20px;
   color: black;
   font-weight: bold;
 }
-nav a#one {
+nav a#select {
   background-color: black;
   color: white;
 }
@@ -26,6 +26,7 @@ body {
 main {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 div {
@@ -48,6 +49,15 @@ img {
     width: 300px;
   }
 }
+section {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+section a {
+  font-size: 30px;
+}
+
 footer {
   text-align: center;
 }

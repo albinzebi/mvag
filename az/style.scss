@@ -1,3 +1,6 @@
+$zero: black;
+$one: white;
+
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -7,15 +10,15 @@ nav {
 
     a {
         font-size: 24px;
-        color: white;
+        color: $one;
         text-decoration: none;
-        padding: 20px 5px;
-        color: black;
+        padding: 20px;
+        color: $zero;
         font-weight: bold;
     }
-    a#one {
-        background-color: black;
-        color: white;
+    a#select {
+        background-color: $zero;
+        color: $one;
     }
 }
 
@@ -26,6 +29,7 @@ body {
 main {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 div {
@@ -36,7 +40,7 @@ div {
 }
 
 .article {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $zero;
 }
 
 img {
@@ -46,6 +50,16 @@ img {
 @media screen and (max-width: 300px) {
     div {
         width: 300px;
+    }
+}
+
+section {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+
+    a {
+        font-size: 30px;
     }
 }
 

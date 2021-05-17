@@ -5,6 +5,7 @@ html {
 nav {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 nav a {
   font-size: 24px;
@@ -23,10 +24,14 @@ body {
   margin: 0;
 }
 
-main {
+main#mainPage {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+main#aboutPage, main#contactPage {
+  text-align: center;
 }
 
 div {
@@ -44,6 +49,10 @@ img {
   max-width: 100%;
 }
 
+img#myPhoto {
+  border-radius: 150px;
+}
+
 @media screen and (max-width: 300px) {
   div {
     width: 300px;
@@ -56,10 +65,12 @@ section {
 }
 section a {
   font-size: 30px;
+  color: black;
 }
 
 footer {
   text-align: center;
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

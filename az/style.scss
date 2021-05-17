@@ -17,6 +17,12 @@ nav {
         color: $zero;
         font-weight: bold;
     }
+
+    a:hover {
+        background-color: $zero;
+        color: $one;
+    }
+
     a#select {
         background-color: $zero;
         color: $one;
@@ -42,6 +48,10 @@ div {
     padding: 10px;
     width: 45%;
     min-width: 300px;
+}
+
+.myProjects:hover {
+    border: 1px solid $zero;
 }
 
 .article {
@@ -70,6 +80,10 @@ section {
     a {
         font-size: 30px;
         color: $zero;
+    }
+
+    a:hover {
+        border: 1px solid $zero;
     }
 }
 

@@ -1,9 +1,21 @@
 /*
 document.addEventListener('DOMContentLoaded', function () {
-    document.querySelector('button#theme').onclick = function () {
-        document.querySelector('body').style.backgroundColor = 'black';
-        document.querySelector('body').style.color = 'white';
-    };
-
+    const titleAttribute = document.querySelector('.myProjects');
+    const newAttribute = document.createAttribute('title')
+    newAttribute.value = 'Click here to open the project in a new tab';
+    titleAttribute.setAttributeNode(newAttribute);
 });
 */
+
+/*
+document.querySelectorAll('.myProjects').forEach( function () {
+    const titleAttribute = document.querySelector('.myProjects');
+    const newAttribute = document.createAttribute('title')
+    newAttribute.value = 'Click here to open the project in a new tab';
+    titleAttribute.setAttributeNode(newAttribute);
+});
+*/
+
+
+const titleAttribute = document.querySelector('.myProjects');
+titleAttribute.setAttribute('title', 'Click here to open the project in a new tab');
